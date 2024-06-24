@@ -1,0 +1,5 @@
+@mixin font-details($weight) {
+    font-family: "Poppins", sans-serif;
+    font-weight: $weight;
+    font-style: normal;
+  }

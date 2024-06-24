@@ -1,7 +1,85 @@
 /* Add global styles to this file, and also import other style files */
+@import "./scss/variables";
+@import "./scss/mixin";
 body {
-        font-family: "Poppins", sans-serif;
-        font-weight: 100;
-        font-style: normal;
+  @include font-details(400);
+  margin: $size-0;
+  padding: $size-0;
+  p {
+    margin: $size-0;
+  }
+  ul {
+    margin: $size-0;
+    padding: $size-0;
+    li {
+      list-style: none;
+      a {
+        text-decoration: none;
       }
+    }
+  }
+  h1,h2,h3,h4,h5,h6{
+    margin: $size-0;
+    padding: $size-0;
+    font-size: 100%;
+    font-weight:normal;
+  }
+  button {
+    border: $size-0;
+    background:none;
+  }
+}
 
+// Grid Container
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat($columns, 1fr);
+  gap: $size-16;
+
+  // Support for nested grids
+  &.nested {
+    grid-column: span $columns;
+  }
+}
+
+// Grid Column
+.grid-column {
+  box-sizing: border-box;
+
+  // Width for each column size
+  @for $i from 1 through $columns {
+    &.col-#{$i} {
+      grid-column: span $i;
+    }
+  }
+}
+
+// Flex Container
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+
+  // Clearfix for floating elements
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+// Grid Column
+.flex-column {
+  box-sizing: border-box;
+
+  // Width for each column size
+  @for $i from 1 through $columns {
+    &.col-#{$i} {
+      flex: 0 1 percentage($i / $columns);
+      max-width: percentage($i / $columns);
+    }
+  }
+}
+
+.justify-content-end {
+  justify-content: end;
+}
