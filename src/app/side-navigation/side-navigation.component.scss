@@ -1,0 +1,19 @@
+@import "./../../scss/variables";
+
+.navigation {
+  background: $gray;
+  height: calc(100vh - 6rem);
+  li {
+    a {
+      color: $white;
+      display: block;
+      padding: $size-16;
+      &:hover {
+        background: $lightgray;
+      }
+    }
+    .active {
+      background: $lightgray;
+    }
+  }
+}

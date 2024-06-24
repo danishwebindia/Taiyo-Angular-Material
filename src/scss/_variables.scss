@@ -1,0 +1,53 @@
+// Base font size
+$base-font-size: 16px;
+
+@function px-to-rem($px) {
+  @return $px / $base-font-size * 1rem;
+}
+
+// Sizes
+$size-0: px-to-rem(0px);
+$size-1: px-to-rem(1px);
+$size-2: px-to-rem(2px);
+$size-3: px-to-rem(3px);
+$size-4: px-to-rem(4px);
+$size-5: px-to-rem(5px);
+$size-6: px-to-rem(6px);
+$size-7: px-to-rem(7px);
+$size-8: px-to-rem(8px);
+$size-9: px-to-rem(9px);
+$size-10: px-to-rem(10px);
+$size-11: px-to-rem(11px);
+$size-12: px-to-rem(12px);
+$size-13: px-to-rem(13px);
+$size-14: px-to-rem(14px);
+$size-15: px-to-rem(15px);
+$size-16: px-to-rem(16px);
+$size-17: px-to-rem(17px);
+$size-18: px-to-rem(18px);
+$size-19: px-to-rem(19px);
+$size-20: px-to-rem(20px);
+$size-21: px-to-rem(21px);
+$size-22: px-to-rem(22px);
+$size-23: px-to-rem(23px);
+$size-24: px-to-rem(24px);
+$size-25: px-to-rem(25px);
+$size-26: px-to-rem(26px);
+$size-27: px-to-rem(27px);
+$size-28: px-to-rem(28px);
+$size-29: px-to-rem(29px);
+$size-30: px-to-rem(30px);
+
+
+// Colors
+$blue: #6495ed;
+$white: #fff;
+$black: #000;
+$darkblue: #151e2e;
+$gray: #34495E;
+$lightgray:#566573;
+$red: #E74C3C;
+$darkred: #C0392B;
+
+//Columns
+$columns: 12;
