@@ -1,11 +1,16 @@
-<div class="grid-container">
-    <div class="grid-column col-6">Firstname: </div>
-    <div class="grid-column col-6"><input type="text" class="input"></div>
-    <div class="grid-column col-6">Lastname: </div>
-    <div class="grid-column col-6"><input type="text" class="input"></div>
-    <div class="grid-column col-6">Status: </div>
-    <div class="grid-column col-6"><input type="checkbox" name="status" id="">Active<input type="checkbox" name="status" id="">Inactive</div>
-    <div class="grid-column col-12 ">
-        <button>Submit</button>
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+<div class="grid-container form-fields">
+    <div class="grid-column col-3">Firstname: </div>
+    <div class="grid-column col-9"><input type="text" class="input" formControlName="firstname"></div>
+    <div class="grid-column col-3">Lastname: </div>
+    <div class="grid-column col-9"><input type="text" class="input" formControlName="lastname"></div>
+    <div class="grid-column col-3">Status: </div>
+    <div class="grid-column col-9">
+        <label for="Active"><input type="radio" name="status" value="Active" id="Active" formControlName="status">Active</label>
+        <label for="Inactive"><input type="radio" name="status" value="Inactive" id="Inactive" formControlName="status">Inactive</label></div>
+    <div class="grid-column col-12 flex-container justify-content-end">
+        <button type="submit">Submit</button>
     </div>
+    
 </div>
+</form>

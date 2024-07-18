@@ -74,8 +74,8 @@ body {
   // Width for each column size
   @for $i from 1 through $columns {
     &.col-#{$i} {
-      flex: 0 1 percentage($i / $columns);
-      max-width: percentage($i / $columns);
+      flex: 0 1 #{calc(100 * $i / $columns)+'%'};
+      max-width: #{calc(100 * $i / $columns)+'%'};
     }
   }
 }
@@ -83,3 +83,5 @@ body {
 .justify-content-end {
   justify-content: end;
 }
+
+

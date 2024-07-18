@@ -1,14 +1,14 @@
 @import "./../../scss/variables";
 
 .header {
-  background: $blue;
+  background: $color-blue;
   padding: 16px;
   .logo {
     font-size: $size-24;
-    color: $white;
+    color: $color-white;
     letter-spacing: $size-2;
     span {
-      color: $darkblue;
+      color: $color-dark-blue;
     }
   }
 }

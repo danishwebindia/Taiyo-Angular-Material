@@ -1,0 +1,21 @@
+@import './../../scss/variables';
+
+.form-fields{
+    font-size: $size-14;
+    input[type="text"]{
+        width: calc(100% - $size-10);
+        height: $size-20;
+        border:$size-1 solid $color-light-gray;
+        border-radius: $size-4;
+    }
+    button {
+        background: $color-green;
+        padding: $size-8 $size-16;
+        border-radius: $size-4;
+        color: $color-white;
+        cursor: pointer;
+        &:hover {
+          background: $color-dark-green;
+        }
+      }
+}

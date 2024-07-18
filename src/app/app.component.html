@@ -1,24 +1,8 @@
-<div>
-    Branch 2 changes
-</div>
-<div>
-    Branch 1 Changes
-</div>
-<div>
-    Dev 2 changes
-</div>
-<div>
-    Branch 3 changes
-</div>
-<div>
-    Branch 4 changes
-</div>
-<div>
-    Branch 5 changes
-</div>
 <app-header></app-header>
 <div class="grid-container">
     <div class="grid-column col-3"><app-side-navigation></app-side-navigation></div>
-    <div class="grid-column col-9"><app-main></app-main></div>
+    <div class="grid-column col-9">
+        <router-outlet></router-outlet>
+    </div>
 </div>
 <app-footer></app-footer>

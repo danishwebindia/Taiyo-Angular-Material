@@ -1,0 +1,16 @@
+@import "./../../scss/variables";
+.table {
+    border:$size-1 solid $color-light-gray;
+    border-radius: $size-4;
+    margin-top: $size-24;
+    .grid-column {
+      padding: $size-14;
+      font-size: $size-14;
+    }
+    .grid-container:first-child {
+      font-weight: 500;
+    }
+    .grid-container:nth-child(odd){
+      background: $color-white-gray;
+    }
+  }
